@@ -12,16 +12,16 @@ try{var _t=localStorage.getItem("dermorphin-theme");if(_t==="light"||_t==="dark"
 :root{
   --bg0:#06070d; --bg1:#0a0c17;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#f5d0fe; --sky-deep:#a21caf;
-  --teal:#a21caf; --teal-deep:#3b0764;
-  --org:#a21caf; --org-deep:#3b0764;
-  --amber:#fbbf24; --rose:#fb7185; --cyan:#f5d0fe;
+  --sky:#2dd4bf; --sky-deep:#19786c;
+  --teal:#f43f5e; --teal-deep:#b80b28;
+  --org:#f43f5e; --org-deep:#b80b28;
+  --amber:#fbbf24; --rose:#818cf8; --cyan:#2dd4bf;
   --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#f5d0fe 5%,#a21caf 50%,#3b0764 95%);
+  --grad:linear-gradient(100deg,#d0fef8 5%,#af1c35 50%,#640717 95%);
   --ongrad:#0a0c14;
   --radius:18px;
-  --acc1:#f5d0fe;--acc2:#a21caf;--acc3:#3b0764;
+  --acc1:#d0fef8;--acc2:#af1c35;--acc3:#640717;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
   --disp:"Avenir Next","Segoe UI",-apple-system,BlinkMacSystemFont,Inter,Roboto,sans-serif;
 }
@@ -31,15 +31,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(162, 28, 175,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(59, 7, 100,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(113, 19, 122,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(251,113,133,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(175,28,53,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(100,7,23,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(122,19,37,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(113,126,251,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(162, 28, 175,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(59, 7, 100,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(113, 19, 122,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(175,28,53,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(100,7,23,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(122,19,37,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -68,13 +68,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#a21caf; --sky-deep:#3b0764;
-  --teal:#74147e; --teal-deep:#5d1065;
-  --org:#a21caf; --org-deep:#3b0764;
-  --amber:#b45309; --rose:#e11d48; --cyan:#5d1065;
+  --sky:#168577; --sky-deep:#062521;
+  --teal:#c80526; --teal-deep:#5b0211;
+  --org:#168577; --org-deep:#062521;
+  --amber:#b48305; --rose:#1a2ff9; --cyan:#168577;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#a21caf,#3b0764,#a21caf);
+  --grad:linear-gradient(100deg,#1caf9c,#076458,#1caf9c);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -120,7 +120,7 @@ nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -130,7 +130,7 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
@@ -188,11 +188,11 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
 .kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
-.kv .k.o{background:rgba(251,146,60,.12);color:var(--org);border:1px solid rgba(251,146,60,.35)}
+.kv .k.o{background:rgba(250,197,61,.12);color:var(--org);border:1px solid rgba(250,197,61,.35)}
 .kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
-.kv .k.g{background:rgba(251,113,133,.12);color:var(--rose);border:1px solid rgba(251,113,133,.35)}
+.kv .k.g{background:rgba(113,126,251,.12);color:var(--rose);border:1px solid rgba(113,126,251,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(162, 28, 175,.10),transparent 70%),#090b15;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(175,28,53,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -209,7 +209,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
@@ -244,8 +244,8 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
 .lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
-.lvl-theory .level{background:rgba(251,146,60,.1);color:var(--org);border:1px solid rgba(251,146,60,.4)}
-.lvl-unknown .level{background:rgba(251,113,133,.1);color:var(--rose);border:1px solid rgba(251,113,133,.4)}
+.lvl-theory .level{background:rgba(250,197,61,.1);color:var(--org);border:1px solid rgba(250,197,61,.4)}
+.lvl-unknown .level{background:rgba(113,126,251,.1);color:var(--rose);border:1px solid rgba(113,126,251,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -266,10 +266,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -282,7 +281,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.3);border-radius:var(--radius);
+.limits{background:rgba(113,126,251,.05);border:1px solid rgba(113,126,251,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -323,7 +322,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none}
-  .in .ebar .fill{transition:none}
+  .ebar.in .fill{transition:none}
 }
 
 /* --- ambient motion additions: subtle, additive, non-intrusive --- */
@@ -333,11 +332,74 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
 .seqr1{animation:seqGlow 4.5s ease-in-out infinite}
 .seqr2{animation:seqGlow 4.5s ease-in-out .9s infinite}
 .seqr3{animation:seqGlow 4.5s ease-in-out 1.8s infinite}
+.seqr4{animation:seqGlow 4.5s ease-in-out 2.7s infinite}
+.seqr5{animation:seqGlow 4.5s ease-in-out 3.6s infinite}
 .flowseq{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out infinite}
 .flowseq2{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out .9s infinite}
 .flowseq3{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out 1.8s infinite}
 
+/* ----- evidence-tier tiles (benefits chapter) ----- */
+.evtimer{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;position:relative;overflow:hidden}
+.evtimer::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--ac,var(--grad))}
+.evtimer.est{--ac:linear-gradient(90deg,#10b981,#a7f3d0)}
+.evtimer.emg{--ac:linear-gradient(90deg,var(--sky-deep),var(--sky))}
+.evtimer.com{--ac:linear-gradient(90deg,var(--amber),#fcdc8b)}
+.evtimer h3{font-family:var(--disp);font-size:1.35rem;font-weight:800;margin-bottom:.4rem;letter-spacing:-.01em}
+.evtimer p,.evtimer li{color:var(--muted);font-size:.99rem}
+.evtimer ul{list-style:none;margin-top:.9rem;display:grid;gap:.65rem}
+.evtimer ul li{padding-left:1.5rem;position:relative;color:var(--muted);font-size:.99rem}
+.evtimer ul li::before{content:"▸";position:absolute;left:0;font-weight:800;color:var(--sky)}
+.evtimer.est ul li::before{color:#10b981}
+.evtimer.com ul li::before{color:var(--amber)}
+.evtimer strong{color:var(--ink)}
+.evwrap{display:grid;gap:1.2rem;margin-bottom:1.4rem}
+.evtimer .evbadge{display:inline-flex;align-items:center;gap:.5rem;font-size:.68rem;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;padding:.32rem .7rem;border-radius:7px;margin-bottom:.7rem}
+.evtimer .evbadge.est{background:rgba(16,185,129,.12);color:#10b981;border:1px solid rgba(16,185,129,.4)}
+.evtimer .evbadge.emg{background:rgba(129,140,248,.12);color:var(--sky);border:1px solid rgba(129,140,248,.4)}
+.evtimer .evbadge.com{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
+html[data-theme="light"] .evtimer .evbadge.est{color:#047857}
+html[data-theme="light"] .evtimer.est ul li::before{color:#047857}
+/* ----- layman "Think of it this way" tile ----- */
+.layman{position:relative;margin:1.1rem 0;padding:1rem 1.2rem 1rem 3.1rem;background:rgba(129,140,248,.06);
+  border:1px dashed rgba(129,140,248,.35);border-radius:14px;color:var(--muted);font-size:.96rem;line-height:1.65}
+.layman strong{color:var(--ink)}
+.layman .llabel{display:block;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--sky);margin-bottom:.35rem}
+.layman .ldot{position:absolute;left:1.15rem;top:1.3rem;width:12px;height:12px;border-radius:50%;background:var(--sky);
+  animation:layPulse 2.4s ease-in-out infinite}
+.layman .ldot::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--sky);
+  animation:udotPulse 2.4s ease-out infinite}
+@keyframes layPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.28)}}
+@media (prefers-reduced-motion:reduce){.layman .ldot,.layman .ldot::after{animation:none;opacity:.7}}
+/* ----- who-it-may-suit tiles ----- */
+.suit{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;position:relative;overflow:hidden}
+.suit::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--ac,var(--grad))}
+.suit.yes{--ac:linear-gradient(90deg,#10b981,#a7f3d0)}
+.suit.no{--ac:linear-gradient(90deg,#717efb,#cdd2fe)}
+.suit h3{font-family:var(--disp);font-size:1.35rem;font-weight:800;margin-bottom:.4rem;letter-spacing:-.01em}
+.suit p,.suit li{color:var(--muted);font-size:.99rem}
+.suit ul{list-style:none;margin-top:.9rem;display:grid;gap:.65rem}
+.suit ul li{padding-left:1.5rem;position:relative}
+.suit ul li::before{content:"▸";position:absolute;left:0;font-weight:800}
+.suit.yes ul li::before{color:#10b981}
+.suit.no ul li::before{color:#717efb}
+.suit strong{color:var(--ink)}
+html[data-theme="light"] .suit.yes ul li::before{color:#047857}
+/* ----- bridge line ----- */
+.bridge{margin:1.4rem 0;padding:.95rem 1.15rem;border-left:3px solid var(--sky);background:rgba(129,140,248,.06);border-radius:0 12px 12px 0;color:var(--muted);font-size:.93rem;line-height:1.7}
+.bridge strong{color:var(--ink)}
 /* ===== mini-poll component ===== */
+/* rating heading + vs-section helpers */
+.rate-h{font-family:var(--disp);font-size:1.5rem;font-weight:800;margin:2.6rem 0 .4rem;text-align:center;letter-spacing:-.01em}
+.vs-h3{font-family:var(--disp);font-size:1.18rem;font-weight:800;margin:1.9rem 0 .7rem;letter-spacing:-.01em}
+.card.does h3{color:#34d399}
+.card.doesnt h3{color:var(--rose)}
+.evbadge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:.22rem .7rem;margin-bottom:.55rem}
+.ev-solid{background:rgba(52,211,153,.14);color:#34d399;border:1px solid rgba(52,211,153,.4)}
+.ev-animal{background:rgba(251,191,36,.14);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
+.ev-none{background:rgba(127,136,165,.14);color:var(--faint);border:1px solid rgba(127,136,165,.4)}
+.ev-no{background:rgba(113,126,251,.14);color:var(--rose);border:1px solid rgba(113,126,251,.4)}
 /* Mini-poll component styles — compact, theme-aware via CSS vars with fallbacks.
    Works inside these infographics (which define --card, --ink, etc.)
    and standalone. */
@@ -349,7 +411,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fdba74), var(--mpc2, #a3e635)) border-box;
+    linear-gradient(135deg, var(--mpc1, #fbd676), var(--mpc2, #a3e635)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -364,8 +426,8 @@ mini-poll { display: block; }
 .mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fdba74);
-  box-shadow: 0 0 10px var(--mpc1, #fdba74);
+  background: var(--mpc1, #fbd676);
+  box-shadow: 0 0 10px var(--mpc1, #fbd676);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -399,7 +461,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(100deg, var(--acc1, #fbd676), var(--acc2, #a3e635), var(--acc3, #fac53d));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -429,7 +491,7 @@ mini-poll { display: block; }
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635));
+  background: linear-gradient(100deg, var(--acc1, #fbd676), var(--acc2, #a3e635));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
@@ -451,7 +513,7 @@ mini-poll { display: block; }
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(90deg, var(--acc1, #fbd676), var(--acc2, #a3e635), var(--acc3, #fac53d));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
 .mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
@@ -489,7 +551,7 @@ mini-poll { display: block; }
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f5d0fe"/><stop offset="50%" stop-color="#a21caf"/><stop offset="100%" stop-color="#3b0764"/>
+      <stop offset="0%" stop-color="#d0fef8"/><stop offset="50%" stop-color="#af1c35"/><stop offset="100%" stop-color="#640717"/>
     </linearGradient>
   </defs>
 </svg>
@@ -516,13 +578,15 @@ mini-poll { display: block; }
   <a href="#ch4"><span class="n">04</span>What Is Known</a>
   <a href="#ch5"><span class="n">05</span>Harm Reduction</a>
   <a href="#ch6"><span class="n">06</span>Risks & Unknowns</a>
-  <a href="#ch7"><span class="n">07</span>Glossary</a>
-  <a href="#ch8"><span class="n">08</span>Takeaways</a>
+  <a href="#ch7"><span class="n">07</span>Research Interest</a>
+  <a href="#ch8"><span class="n">08</span>Who It Suits</a>
+  <a href="#ch9"><span class="n">09</span>Glossary</a>
+  <a href="#ch10"><span class="n">10</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
 <nav class="chapters" aria-label="Chapters"><div class="rail" id="rail">
-  <a href="#ch1">01 · The Peptide</a><a href="#ch2">02 · Frog Juice</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Warnings</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Glossary</a><a href="#ch8">08 · Takeaways</a>
+  <a href="#ch1">01 · The Peptide</a><a href="#ch2">02 · Frog Juice</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Warnings</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Research interest</a><a href="#ch8">08 · Who It Suits</a><a href="#ch9">09 · Glossary</a><a href="#ch10">10 · Takeaways</a>
 </div></nav>
 
 <header class="hero">
@@ -550,7 +614,8 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">01</span>The peptide</span>
   <h2>What <span class="hl">dermorphin</span> actually is</h2>
   <p class="lede">Dermorphin is a <strong>natural opioid</strong> — not designed in a lab, but evolved in frog skin as chemical defense. Seven amino acids, one of them a mirror-image oddity, and a potency that makes morphine look mild.</p>
-<div class="diagram reveal"><svg viewBox="0 0 640 210" role="img" aria-label="Chain of seven amino acid beads representing dermorphin with D-alanine highlighted"><text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">DERMORPHIN · 7 AMINO ACIDS</text><g><circle cx="40.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="133.3" cy="93" r="8" fill="#a21caf" stroke="#f5d0fe" stroke-width="2"/><circle cx="226.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="320.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="413.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="506.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="600.0" cy="93" r="5.5" fill="#2a3352"/></g><rect x="245" y="60" width="150" height="66" rx="12" fill="none" stroke="#a21caf" stroke-width="2.5" stroke-dasharray="7 5" class="flow"/><text x="320" y="152" fill="#f5d0fe" font-size="13" font-weight="800" text-anchor="middle">D-ALANINE · THE ODD ONE</text><text x="320" y="172" fill="#7f88a5" font-size="12" text-anchor="middle">a mirror-image building block — resists the body's breakdown enzymes</text><rect x="170" y="186" width="300" height="4" rx="2" fill="#a21caf" opacity=".8"/><text x="320" y="206" fill="#a21caf" font-size="12" font-weight="700" text-anchor="middle">MU-OPIOID AGONIST · ~30–40× MORPHINE</text></svg><div class="cap">From Phyllomedusa frog skin · no human medical use</div></div>
+<div class="diagram reveal"><svg viewBox="0 0 640 210" role="img" aria-label="Chain of seven amino acid beads representing dermorphin with D-alanine highlighted"><text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">DERMORPHIN · 7 AMINO ACIDS</text><g><circle cx="40.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="133.3" cy="93" r="8" fill="#af1c35" stroke="#d0fef8" stroke-width="2"/><circle cx="226.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="320.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="413.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="506.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="600.0" cy="93" r="5.5" fill="#2a3352"/></g><rect x="245" y="60" width="150" height="66" rx="12" fill="none" stroke="#af1c35" stroke-width="2.5" stroke-dasharray="7 5" class="flow"/><text x="320" y="152" fill="#d0fef8" font-size="13" font-weight="800" text-anchor="middle">D-ALANINE · THE ODD ONE</text><text x="320" y="172" fill="#7f88a5" font-size="12" text-anchor="middle">a mirror-image building block — resists the body's breakdown enzymes</text><rect x="170" y="186" width="300" height="4" rx="2" fill="#af1c35" opacity=".8"/><text x="320" y="206" fill="#af1c35" font-size="12" font-weight="700" text-anchor="middle">MU-OPIOID AGONIST · ~30–40× MORPHINE</text></svg><div class="cap">From Phyllomedusa frog skin · no human medical use</div></div>
+<div class="diagram reveal"><svg viewBox="0 0 640 250" role="img" aria-label="From frog skin to opioid pharmacology: ecology, isolation, structure, pharmacology"><text x="320" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle">FROM FROG SKIN TO OPIOID PHARMACOLOGY</text><g font-size="11" font-weight="800" text-anchor="middle"><text x="80" y="46" fill="#d0fef8">1 · FROG SKIN</text><text x="230" y="46" fill="#af1c35">2 · ISOLATED</text><text x="380" y="46" fill="#d0fef8">3 · STRUCTURE</text><text x="540" y="46" fill="#af1c35">4 · MU AGONIST</text></g><g><rect x="16" y="58" width="128" height="104" rx="14" fill="#151b36" stroke="#d0fef8" stroke-width="2"/><rect x="166" y="58" width="128" height="104" rx="14" fill="#151b36" stroke="#af1c35" stroke-width="2"/><rect x="316" y="58" width="128" height="104" rx="14" fill="#151b36" stroke="#d0fef8" stroke-width="2"/><rect x="466" y="58" width="128" height="104" rx="14" fill="#151b36" stroke="#af1c35" stroke-width="2"/></g><g font-size="12" font-weight="800" text-anchor="middle"><text x="80" y="92" fill="#d0fef8">&#x1F438; FROG SKIN</text><text x="230" y="92" fill="#af1c35">2 · ISOLATED</text><text x="380" y="92" fill="#d0fef8">3 · STRUCTURE</text><text x="540" y="92" fill="#af1c35">4 · MU AGONIST</text></g><g font-size="10.5" font-weight="600" text-anchor="middle" fill="#a9b1c9"><text x="80" y="114">Phyllomedusinae</text><text x="80" y="130">defense secretion</text><text x="230" y="114">heptapeptide</text><text x="230" y="130">extracted + identified</text><text x="540" y="114">~30&#8211;40&#215; morphine</text><text x="540" y="130">potent, selective</text></g><g><circle cx="329" cy="114" r="5.5" fill="#2a3352"/><circle cx="346" cy="114" r="7.5" fill="#af1c35" stroke="#d0fef8" stroke-width="2"/><circle cx="363" cy="114" r="5.5" fill="#2a3352"/><circle cx="380" cy="114" r="5.5" fill="#2a3352"/><circle cx="397" cy="114" r="5.5" fill="#2a3352"/><circle cx="414" cy="114" r="5.5" fill="#2a3352"/><circle cx="431" cy="114" r="5.5" fill="#2a3352"/></g><text x="380" y="140" fill="#a9b1c9" font-size="10.5" font-weight="600" text-anchor="middle">D-Ala at position 2</text><g stroke="#7f88a5" stroke-width="2" fill="none" class="flow" stroke-dasharray="6 6"><path d="M144 110 h22"/><path d="M294 110 h22"/><path d="M444 110 h22"/></g><circle r="5" fill="#af1c35"><animateMotion dur="2.4s" repeatCount="indefinite" path="M144,110 L166,110"/></circle><circle r="5" fill="#af1c35"><animateMotion dur="2.4s" begin="-0.8s" repeatCount="indefinite" path="M294,110 L316,110"/></circle><circle r="5" fill="#af1c35"><animateMotion dur="2.4s" begin="-1.6s" repeatCount="indefinite" path="M444,110 L466,110"/></circle><text x="320" y="200" fill="#af1c35" font-size="12" font-weight="700" text-anchor="middle">Four lenses on one molecule — ecology, isolation, structure, pharmacology.</text></svg><div class="cap">A predator-deterrent secretion becomes a measured, potent mu-opioid agonist. Same molecule all the way down.</div></div>
 <div class="grid3">
 <div class="card sky reveal"><h3>Frog-skin defense chemical</h3><p>First isolated from the skin secretions of <strong>Phyllomedusa</strong> frogs in South America. In nature it's <strong>predator deterrent</strong> — a chemical 'do not eat me' sign, not a medicine.</p></div>
 <div class="card teal reveal"><h3>The D-alanine trick</h3><p>Most amino acids in nature are 'left-handed' (L). Dermorphin's second bead is <strong>right-handed D-alanine</strong> — installed by a rare enzyme — which makes the peptide <strong>resist the enzymes</strong> that would normally chop it up.</p></div>
@@ -567,7 +632,7 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">02</span>The racing scandal</span>
   <h2>The <span class="hl">"frog juice"</span> doping scandal</h2>
   <p class="lede">Dermorphin went from obscure biochemistry to headlines in <strong>2012</strong>, when racing labs found it in dozens of racehorses. Painkillers that strong don't make horses healthier — they make injured horses <strong>run through injuries</strong>.</p>
-<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Timeline"><line x1="40" y1="110" x2="600" y2="110" stroke="#3a4160" stroke-width="3" class="flowseq"/><circle cx="70" cy="110" r="26" fill="none" stroke="#f5d0fe" stroke-width="2" class="ringp"/><circle cx="70" cy="110" r="13" fill="#f5d0fe"/><text x="70" y="60" fill="#f5d0fe" font-size="13" font-weight="800" text-anchor="middle">1980s</text><text x="70" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Isolated</text><text x="70" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Dermorphin identified in frog skin secretions</text><circle cx="195" cy="110" r="26" fill="none" stroke="#a21caf" stroke-width="2" class="ringp"/><circle cx="195" cy="110" r="13" fill="#a21caf"/><text x="195" y="60" fill="#a21caf" font-size="13" font-weight="800" text-anchor="middle">2000s</text><text x="195" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Whispers</text><text x="195" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Racing regulators hear rumors of undetectable painkillers</text><circle cx="320" cy="110" r="26" fill="none" stroke="#3b0764" stroke-width="2" class="ringp"/><circle cx="320" cy="110" r="13" fill="#3b0764"/><text x="320" y="60" fill="#3b0764" font-size="13" font-weight="800" text-anchor="middle">2012</text><text x="320" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">~30 positives</text><text x="320" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Horses in multiple states test positive — 'frog juice'</text><circle cx="445" cy="110" r="26" fill="none" stroke="#a21caf" stroke-width="2" class="ringp"/><circle cx="445" cy="110" r="13" fill="#a21caf"/><text x="445" y="60" fill="#a21caf" font-size="13" font-weight="800" text-anchor="middle">2012+</text><text x="445" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Class 1 ban</text><text x="445" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Racing authorities rank it a top-tier prohibited substance</text><circle cx="570" cy="110" r="26" fill="none" stroke="#f5d0fe" stroke-width="2" class="ringp"/><circle cx="570" cy="110" r="13" fill="#f5d0fe"/><text x="570" y="60" fill="#f5d0fe" font-size="13" font-weight="800" text-anchor="middle">Now</text><text x="570" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">WADA S0</text><text x="570" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Falls under the non-approved substances ban in human sport</text></svg><div class="cap">From frog backs to racetracks: a doping story in five acts.</div></div>
+<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Timeline"><line x1="40" y1="110" x2="600" y2="110" stroke="#3a4160" stroke-width="3" class="flowseq"/><circle cx="70" cy="110" r="26" fill="none" stroke="#d0fef8" stroke-width="2" class="ringp"/><circle cx="70" cy="110" r="13" fill="#d0fef8"/><text x="70" y="60" fill="#d0fef8" font-size="13" font-weight="800" text-anchor="middle">1980s</text><text x="70" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Isolated</text><text x="70" y="176" fill="#7f88a5" font-size="10.5" text-anchor="middle">identified in frog skin</text><text x="70" y="190" fill="#7f88a5" font-size="10.5" text-anchor="middle">secretions</text><circle cx="195" cy="110" r="26" fill="none" stroke="#af1c35" stroke-width="2" class="ringp"/><circle cx="195" cy="110" r="13" fill="#af1c35"/><text x="195" y="60" fill="#af1c35" font-size="13" font-weight="800" text-anchor="middle">2000s</text><text x="195" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Whispers</text><text x="195" y="176" fill="#7f88a5" font-size="10.5" text-anchor="middle">rumors of an</text><text x="195" y="190" fill="#7f88a5" font-size="10.5" text-anchor="middle">undetectable painkiller</text><circle cx="320" cy="110" r="26" fill="none" stroke="#640717" stroke-width="2" class="ringp"/><circle cx="320" cy="110" r="13" fill="#640717"/><text x="320" y="60" fill="#640717" font-size="13" font-weight="800" text-anchor="middle">2012</text><text x="320" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">~30 positives</text><text x="320" y="176" fill="#7f88a5" font-size="10.5" text-anchor="middle">~30 positives across</text><text x="320" y="190" fill="#7f88a5" font-size="10.5" text-anchor="middle">multiple states</text><circle cx="445" cy="110" r="26" fill="none" stroke="#af1c35" stroke-width="2" class="ringp"/><circle cx="445" cy="110" r="13" fill="#af1c35"/><text x="445" y="60" fill="#af1c35" font-size="13" font-weight="800" text-anchor="middle">2012+</text><text x="445" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Class 1 ban</text><text x="445" y="176" fill="#7f88a5" font-size="10.5" text-anchor="middle">top-tier prohibited</text><text x="445" y="190" fill="#7f88a5" font-size="10.5" text-anchor="middle">substance</text><circle cx="570" cy="110" r="26" fill="none" stroke="#d0fef8" stroke-width="2" class="ringp"/><circle cx="570" cy="110" r="13" fill="#d0fef8"/><text x="570" y="60" fill="#d0fef8" font-size="13" font-weight="800" text-anchor="middle">Now</text><text x="570" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">WADA S0</text><text x="570" y="176" fill="#7f88a5" font-size="10.5" text-anchor="middle">WADA S0 — banned in</text><text x="570" y="190" fill="#7f88a5" font-size="10.5" text-anchor="middle">human sport</text></svg><div class="cap">From frog backs to racetracks: a doping story in five acts.</div></div>
 <div class="kv reveal"><span class="k s">Why dopers wanted it</span><p>A painkiller <strong>40× morphine</strong> that early tests couldn't detect: horses could run <strong>past pain, past exhaustion, past injury</strong> — winning races while risking catastrophic breakdowns.</p></div>
 <div class="kv reveal"><span class="k t">How it was caught</span><p>A laboratory changed its <strong>testing method</strong> — and suddenly the invisible became visible. Around 30 positives surfaced across several states. The 'undetectable' era ended overnight.</p></div>
 <div class="kv reveal"><span class="k o">Zero tolerance</span><p>Racing authorities classified it <strong>Class 1</strong> — their most serious category — with harsh penalties. In human sport it falls under WADA's <strong>S0</strong> (non-approved substances): banned, full stop.</p></div>
@@ -582,16 +647,23 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">03</span>Why it kills</span>
   <h2>Why this molecule <span class="hl">kills</span></h2>
   <p class="lede">Opioid pharmacology is unforgiving, and potency multiplies every error. Here's the chain from receptor to <strong>respiratory arrest</strong> — the reason this page exists.</p>
-<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Four-step mechanism diagram"><g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#f5d0fe" stroke-width="2"/><text x="84" y="105" fill="#f5d0fe">1 · BIND</text><text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Hits mu receptors</text><text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">brain + brainstem</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#a21caf" stroke-width="2"/><text x="236" y="105" fill="#a21caf">2 · DULL</text><text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Pain switched off</text><text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">euphoria, sedation</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#f5d0fe" stroke-width="2"/><text x="388" y="105" fill="#f5d0fe">3 · SLOW</text><text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Breathing depressed</text><text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">brainstem suppressed</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#a21caf" stroke-width="2"/><text x="540" y="105" fill="#a21caf">4 · STOP</text><text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Respiratory arrest</text><text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">overdose = death</text></g><g stroke="#7f88a5" stroke-width="2" fill="none" class="flow" stroke-dasharray="6 6"><path d="M148 120 h24"/><path d="M300 120 h24"/><path d="M452 120 h24"/></g></svg><div class="cap">The opioid chain: bind → dull → slow → stop. Potency compresses the distance between step 2 and step 4.</div></div>
-<div class="ebar"><div class="row"><span class="t">Mu-opioid potency</span><span class="v">extreme</span></div><div class="track"><div class="fill" style="--w:95%;background:linear-gradient(90deg,#a21caf,#f5d0fe)"></div></div><div class="note">~30–40× morphine in standard assays. Potency is not a benefit — it's a smaller margin for error.</div></div>
-<div class="ebar"><div class="row"><span class="t">Respiratory depression risk</span><span class="v">mechanistic certainty</span></div><div class="track"><div class="fill" style="--w:95%;background:linear-gradient(90deg,#a21caf,#f5d0fe)"></div></div><div class="note">Full mu-agonists suppress the brainstem's breathing drive. This follows directly from the pharmacology.</div></div>
-<div class="ebar"><div class="row"><span class="t">Dose-estimation hazard</span><span class="v">extreme</span></div><div class="track"><div class="fill" style="--w:90%;background:linear-gradient(90deg,#3b0764,#a21caf)"></div></div><div class="note">At this potency, a measurement error invisible to the eye is a <strong>lethal</strong> error. No validated dosing exists — because there is no safe use.</div></div>
-<div class="ebar"><div class="row"><span class="t">Reversal data</span><span class="v">none specific</span></div><div class="track"><div class="fill" style="--w:10%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No dermorphin-specific reversal protocol exists. General opioid-overdose response is all emergency medicine has.</div></div>
+<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Four-step mechanism diagram"><g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#d0fef8" stroke-width="2"/><text x="84" y="105" fill="#d0fef8">1 · BIND</text><text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Hits mu receptors</text><text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">brain + brainstem</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#af1c35" stroke-width="2"/><text x="236" y="105" fill="#af1c35">2 · DULL</text><text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Pain switched off</text><text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">euphoria, sedation</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#d0fef8" stroke-width="2"/><text x="388" y="105" fill="#d0fef8">3 · SLOW</text><text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Breathing depressed</text><text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">brainstem suppressed</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#af1c35" stroke-width="2"/><text x="540" y="105" fill="#af1c35">4 · STOP</text><text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Respiratory arrest</text><text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">overdose = death</text></g><g stroke="#7f88a5" stroke-width="2" fill="none" class="flow" stroke-dasharray="6 6"><path d="M148 120 h24"/><path d="M300 120 h24"/><path d="M452 120 h24"/></g></svg><div class="cap">The opioid chain: bind → dull → slow → stop. Potency compresses the distance between step 2 and step 4.</div></div>
+<div class="diagram reveal"><svg viewBox="0 0 640 445" role="img" aria-label="Pain signal journey and the mu-opioid receptor mechanism"><text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">THE PAIN SIGNAL'S JOURNEY — BEFORE THE OPIOID</text><g><rect x="16" y="40" width="140" height="72" rx="14" fill="#151b36" stroke="#d0fef8" stroke-width="2"/><rect x="484" y="40" width="140" height="72" rx="14" fill="#151b36" stroke="#af1c35" stroke-width="2"/></g><g font-size="12" font-weight="800" text-anchor="middle"><text x="86" y="66" fill="#d0fef8">1 · STIMULUS</text><text x="554" y="66" fill="#af1c35">2 · DORSAL HORN</text></g><g font-size="10.5" font-weight="600" text-anchor="middle" fill="#a9b1c9"><text x="86" y="86">pain signal starts</text><text x="86" y="102">in peripheral tissue</text><text x="554" y="86">spinal cord</text><text x="554" y="102">pain's first relay</text></g><path d="M156,76 C 210,54 270,98 330,76 C 390,54 430,98 484,76" stroke="#7f88a5" stroke-width="3" fill="none" class="flowseq"/><circle r="5" fill="#fbbf24"><animateMotion dur="2.6s" repeatCount="indefinite" path="M156,76 C 210,54 270,98 330,76 C 390,54 430,98 484,76"/></circle><circle r="5" fill="#fbbf24"><animateMotion dur="2.6s" begin="-1.3s" repeatCount="indefinite" path="M156,76 C 210,54 270,98 330,76 C 390,54 430,98 484,76"/></circle><text x="320" y="130" fill="#7f88a5" font-size="10.5" font-weight="600" text-anchor="middle">sensory neuron — the signal travels toward the spinal cord</text><rect x="16" y="148" width="608" height="266" rx="16" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="1.5"/><text x="320" y="172" fill="#d0fef8" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="1.5">ZOOM IN: THE NEURONAL MEMBRANE — WHERE DERMORPHIN ACTS</text><text x="40" y="196" fill="#7f88a5" font-size="10.5" font-weight="800" letter-spacing="1">EXTRACELLULAR SPACE</text><text x="604" y="196" fill="#fbbf24" font-size="10.5" font-weight="800" letter-spacing="1" text-anchor="end">DERMORPHIN NEVER ENTERS THE NEURON</text><circle r="5" fill="#d0fef8"><animateMotion dur="2.8s" repeatCount="indefinite" path="M44,208 L288,208"/></circle><circle r="5" fill="#d0fef8"><animateMotion dur="2.8s" begin="-0.9s" repeatCount="indefinite" path="M44,208 L288,208"/></circle><circle r="5" fill="#d0fef8"><animateMotion dur="2.8s" begin="-1.8s" repeatCount="indefinite" path="M44,208 L288,208"/></circle><g stroke="#3a4160" stroke-width="3"><line x1="40" y1="218" x2="600" y2="218"/><line x1="40" y1="234" x2="600" y2="234"/></g><path d="M288,190 L312,218 L288,234 L312,256" stroke="#d0fef8" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M290,192 a10,10 0 0 1 20,0" stroke="#fbbf24" stroke-width="2.5" fill="none"/><text x="300" y="274" fill="#d0fef8" font-size="10" font-weight="800" text-anchor="middle">MU-OPIOID RECEPTOR</text><g><rect x="20" y="290" width="104" height="110" rx="12" fill="#151b36" stroke="#d0fef8" stroke-width="2" class="seqr1"/><rect x="140" y="290" width="104" height="110" rx="12" fill="#151b36" stroke="#af1c35" stroke-width="2" class="seqr2"/><rect x="260" y="290" width="104" height="110" rx="12" fill="#151b36" stroke="#d0fef8" stroke-width="2" class="seqr3"/><rect x="380" y="290" width="104" height="110" rx="12" fill="#151b36" stroke="#af1c35" stroke-width="2" class="seqr4"/><rect x="500" y="290" width="104" height="110" rx="12" fill="#151b36" stroke="#d0fef8" stroke-width="2" class="seqr5"/></g><g font-size="10.5" font-weight="800" text-anchor="middle"><text x="72" y="312" fill="#d0fef8">1 · DOCK</text><text x="192" y="312" fill="#af1c35">2 · CASCADE</text><text x="312" y="312" fill="#d0fef8">3 · QUIET</text><text x="432" y="312" fill="#af1c35">4 · CALM</text><text x="552" y="312" fill="#d0fef8">5 · DAMPEN</text></g><g font-size="10" font-weight="600" text-anchor="middle" fill="#a9b1c9"><text x="72" y="332">binds the receptor</text><text x="72" y="346">stays outside</text><text x="192" y="332">G-protein fires</text><text x="192" y="346">inside the cell</text><text x="312" y="332">less transmitter</text><text x="312" y="346">released</text><text x="432" y="332">neuron harder</text><text x="432" y="346">to excite</text><text x="552" y="332">less pain sent</text><text x="552" y="346">onward</text></g><g stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq2" stroke-dasharray="6 6"><path d="M124 345 h16"/><path d="M244 345 h16"/><path d="M364 345 h16"/><path d="M484 345 h16"/></g><text x="320" y="432" fill="#a9b1c9" font-size="11" font-weight="600" text-anchor="middle">Five separate events — binding starts the chain; it never skips to relief.</text></svg><div class="cap">Pain travels: tissue → sensory neuron → dorsal horn. Dermorphin docks extracellularly — then the cell's own cascade quiets it.</div></div>
+<h3 class="vs-h3">Brain vs spinal cord — where the peptide reaches matters</h3>
+<div class="grid3">
+<div class="card sky reveal"><span class="evbadge ev-solid">Animal research</span><h3>Spinal: the dorsal horn</h3><p>The first relay station for pain. Animal studies show dermorphin produces strong <strong>spinal antinociception</strong> — and those effects were <strong>blocked by naloxone</strong>, confirming opioid-receptor involvement.</p></div>
+<div class="card teal reveal"><span class="evbadge ev-animal">Animal research</span><h3>Supraspinal: the brain</h3><p>Brain regions add a second layer — analgesia, but also the <strong>respiratory depression</strong> that kills. Spinal and brain effects are separate events; reaching one compartment does not guarantee reaching the other.</p></div>
+<div class="card org reveal"><span class="evbadge ev-none">Varies by compound</span><h3>The blood-brain barrier</h3><p>BBB penetration is <strong>not a universal property</strong> of dermorphin preparations or analogues. Treat any BBB claim as a <strong>specific research finding for that compound</strong>, not a blanket fact.</p></div>
+</div>
+<div class="ebar reveal"><div class="row"><span class="t">Mu-opioid potency</span><span class="v">extreme</span></div><div class="track"><div class="fill" style="--w:95%;background:linear-gradient(90deg,#af1c35,#d0fef8)"></div></div><div class="note">~30–40× morphine in standard assays. Potency is not a benefit — it's a smaller margin for error.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Respiratory depression risk</span><span class="v">mechanistic certainty</span></div><div class="track"><div class="fill" style="--w:95%;background:linear-gradient(90deg,#af1c35,#d0fef8)"></div></div><div class="note">Full mu-agonists suppress the brainstem's breathing drive. This follows directly from the pharmacology.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Dose-estimation hazard</span><span class="v">extreme</span></div><div class="track"><div class="fill" style="--w:90%;background:linear-gradient(90deg,#640717,#af1c35)"></div></div><div class="note">At this potency, a measurement error invisible to the eye is a <strong>lethal</strong> error. No validated dosing exists — because there is no safe use.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Reversal data</span><span class="v">none specific</span></div><div class="track"><div class="fill" style="--w:10%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No dermorphin-specific reversal protocol exists. General opioid-overdose response is all emergency medicine has.</div></div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>The math that kills: <strong>30–40× morphine means the difference between 'felt nothing' and 'stopped breathing' can be a speck</strong>. There is no safe dose, no experienced user, no careful measurement that fixes a margin this thin — especially from unregulated powder of unknown purity.</p></div>
 </section>
 <mini-poll slug="dermorphin-mini-ch3"
-  data-question="The horse-racing scandal — your reaction?"
-  data-answers='[["🏇", "Wild story"],["😠", "Cruel to the horses"],["🔬", "Testing beat cheating"],["📖", "Knew about it"]]'>
+  data-question="Which step of the mechanism stood out most?"
+  data-answers='[["⚡", "The pain-signal journey"],["🔒", "Binding stays outside the cell"],["🔇", "Five steps, no shortcuts"],["🧠", "Brain vs spinal cord"]]'>
 </mini-poll>
 <!-- ============ CHAPTER 4 ============ -->
 <section class="chapter" id="ch4">
@@ -604,10 +676,30 @@ mini-poll { display: block; }
 <div class="card org reveal"><h3>Unknown: everything else</h3><p>No human safety data, no interaction data, no reversal protocol, no quality control in illicit supply. The file isn't thin — <strong>outside the pharmacology, it's empty</strong>.</p></div>
 </div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>What we know fits on an index card: <strong>it's an ultra-potent opioid, it's banned everywhere, it has no medical use, and it can kill</strong>. Anyone telling you more than that — about 'safe' amounts, 'manageable' risks, or benefits — is inventing it.</p></div>
+<h3 class="vs-h3">Dermorphin vs Morphine vs Dermorphin Analogues</h3>
+<div class="twrap reveal"><table class="trial">
+<tr><th scope="col"></th><th scope="col">Dermorphin</th><th scope="col">Morphine</th><th scope="col">Dermorphin analogues</th></tr>
+<tr><td>What it is</td><td>7-amino-acid <strong>frog-skin peptide</strong></td><td>Plant-derived <strong>alkaloid</strong>, approved medicine</td><td><strong>Lab-modified</strong> versions of the peptide (e.g. DALDA)</td></tr>
+<tr><td>Receptor target</td><td><strong>Mu-opioid agonist</strong>, highly selective</td><td><strong>Mu-opioid agonist</strong></td><td>Mu-opioid agonists — some with <strong>extremely high selectivity</strong></td></tr>
+<tr><td>Reported potency</td><td><strong>~30–40× morphine</strong> in standard animal assays</td><td>The <strong>reference standard</strong></td><td><strong>Varies enormously</strong> by analogue</td></tr>
+<tr><td>Tolerance / dependence</td><td>Animal studies suggest a <strong>different profile</strong> from morphine — <strong>experimental, not safer</strong></td><td>Well characterized <strong>in humans</strong></td><td>Data belongs to the <strong>specific analogue</strong> tested</td></tr>
+<tr><td>Human medical use</td><td><strong>None</strong> — no trials, no approval</td><td><strong>Approved</strong> pain medicine</td><td><strong>None</strong> — research compounds only</td></tr>
+</table></div>
+<div class="kv reveal"><span class="k o">The rule</span><p>Dermorphin is a <strong>different pharmacological category</strong> from peptides marketed for tissue repair, metabolism, or longevity. And native dermorphin <strong>≠ its analogues</strong> — never transfer a finding from one to the other.</p></div>
+<h3 class="vs-h3">What it does vs what it doesn't do</h3>
+<div class="grid2">
+<div class="card does reveal"><h3>What it does (in research)</h3><p>Potent <strong>mu-opioid agonism</strong> demonstrated in receptor assays and animal pain models. Carries the full opioid risk package: <strong>respiratory depression, dependence, overdose, death</strong>.</p></div>
+<div class="card doesnt reveal"><h3>What it doesn't do</h3><p>Not muscle growth, not tissue regeneration, not anti-aging, not inflammation repair. <strong>High potency is a hazard, not a health benefit</strong> — and nothing here repairs nerves, removes tissue, or permanently ends pain.</p></div>
+</div>
+<h3 class="vs-h3">The evidence ladder</h3>
+<div class="ebar reveal"><div class="row"><span class="t">Receptor / binding studies</span><span class="v">solid</span></div><div class="track"><div class="fill" style="--w:70%;background:linear-gradient(90deg,#af1c35,#d0fef8)"></div></div><div class="note">Dermorphin and numerous analogues characterized as mu-opioid ligands.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Animal pain models</span><span class="v">solid</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#640717,#af1c35)"></div></div><div class="note">Strong antinociception reported; spinal effects blocked by naloxone in animal research.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Human clinical evidence</span><span class="v">none established</span></div><div class="track"><div class="fill" style="--w:5%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No approved use, no therapeutic trials. The human file is effectively blank.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Anecdotal reports</span><span class="v">not evidence</span></div><div class="track"><div class="fill" style="--w:15%;background:linear-gradient(90deg,#b48409,#fbbf24)"></div></div><div class="note">Stories are not data — especially for pharmacology this lethal.</div></div>
 </section>
 <mini-poll slug="dermorphin-mini-ch4"
-  data-question="&#x27;Potency is a warning, not a feature&#x27; — agree?"
-  data-answers='[["✅", "Completely"],["🤔", "Mostly"],["❓", "Need to think"],["📖", "New framing for me"]]'>
+  data-question="Dermorphin vs morphine vs analogues — clearest takeaway?"
+  data-answers='[["🧬", "It&#x27;s an opioid, not a wonder peptide"],["🔄", "Analogue findings ≠ native dermorphin"],["📊", "No human safety data"],["⚠️", "Potency = warning"]]'>
 </mini-poll>
 <!-- ============ CHAPTER 5 ============ -->
 <section class="chapter" id="ch5">
@@ -650,33 +742,111 @@ mini-poll { display: block; }
 </mini-poll>
 <!-- ============ CHAPTER 7 ============ -->
 <section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Glossary</span>
-  <h2>Speak <span class="hl">harm reduction</span></h2>
-  <p class="lede">Twelve terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
-<div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5d0fe22"/><path d="M24 6v30M14 12l20 24M34 12L14 36" fill="none" stroke="#f5d0fe" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Dermorphin</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Tyr-D-Ala-Phe-Gly-Tyr-Pro-Ser-NH₂: a heptapeptide opioid from Phyllomedusa frog skin; potent, selective mu-opioid receptor agonist.</p><p class="gex"><span class="gslabel">Example</span>The subject of this page — learn about it, don't seek it.</p><div class="plain"><span class="plabel">Plain English</span>Frog-skin painkiller, ~40× morphine.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a21caf22"/><circle cx="24" cy="24" r="14" fill="none" stroke="#a21caf" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#a21caf"/></svg><span class="term">Mu-opioid receptor</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The brain receptor that mediates opioid pain relief — and opioid respiratory depression, euphoria, and dependence.</p><p class="gex"><span class="gslabel">Example</span>The lock dermorphin's key fits.</p><div class="plain"><span class="plabel">Plain English</span>The brain's opioid docking station.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#3b076422"/><path d="M12 36l8-18 6 10 4-6 6 14z" fill="none" stroke="#3b0764" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Agonist</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A molecule that activates its receptor. Dermorphin is a <em>full</em> agonist — it turns the receptor fully on, not partially.</p><p class="gex"><span class="gslabel">Example</span>Why the effects are maximal, not mild.</p><div class="plain"><span class="plabel">Plain English</span>A key that turns the lock all the way.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5d0fe22"/><path d="M10 24h8l3-8 4 16 3-8h10" fill="none" stroke="#f5d0fe" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">D-alanine</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The mirror-image form of alanine at position 2 — rare in nature, installed by a special enzyme, and resistant to breakdown enzymes.</p><p class="gex"><span class="gslabel">Example</span>The odd bead that makes it long-lasting.</p><div class="plain"><span class="plabel">Plain English</span>A backwards building block enzymes can't chew.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a21caf22"/><path d="M14 8h20v10l-5 5v13a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V23l-5-5z" fill="none" stroke="#a21caf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Potency</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>How little of a drug is needed for an effect. High potency ≠ better — it means smaller errors, bigger consequences.</p><p class="gex"><span class="gslabel">Example</span>Why 30–40× is a warning, not a feature.</p><div class="plain"><span class="plabel">Plain English</span>Strength per speck — and speck-sized margins.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#3b076422"/><path d="M24 8c7 0 12 5 12 12 0 9-12 20-12 20S12 29 12 20c0-7 5-12 12-12z" fill="none" stroke="#3b0764" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Respiratory depression</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Slowing or stopping of breathing from brainstem suppression — the mechanism of nearly all opioid overdose deaths.</p><p class="gex"><span class="gslabel">Example</span>How opioids actually kill.</p><div class="plain"><span class="plabel">Plain English</span>The brain forgetting to breathe.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5d0fe22"/><path d="M8 16h32M8 24h32M8 32h20" fill="none" stroke="#f5d0fe" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Class 1 prohibited</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Horse racing's most serious prohibited-substance category, where dermorphin sits — with the harshest penalties.</p><p class="gex"><span class="gslabel">Example</span>Racing's verdict on 'frog juice.'</p><div class="plain"><span class="plabel">Plain English</span>Racing's top-tier banned list.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a21caf22"/><path d="M18 10h12v28H18zM18 18h12M18 26h12" fill="none" stroke="#a21caf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">WADA S0</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The WADA category for non-approved substances — anything not approved for human therapeutic use is prohibited by default.</p><p class="gex"><span class="gslabel">Example</span>Why it's banned in human sport too.</p><div class="plain"><span class="plabel">Plain English</span>Banned because it's not an approved medicine.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#3b076422"/><path d="M24 6l14 8v16l-14 8-14-8V14z" fill="none" stroke="#3b0764" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="22" r="3.5" fill="#3b0764"/></svg><span class="term">Kambo</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Ritual use of Phyllomedusa secretions (which contain dermorphin among many compounds) — with reported fatalities and no medical basis.</p><p class="gex"><span class="gslabel">Example</span>The frog-secretion practice, not to be confused with medicine.</p><div class="plain"><span class="plabel">Plain English</span>Frog-secretion rituals — dangerous, not therapeutic.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5d0fe22"/><path d="M10 30c3-9 8-14 14-14s11 5 14 14M24 16v18" fill="none" stroke="#f5d0fe" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Overdose</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Drug effects exceeding the body's ability to cope — for opioids, marked by unresponsiveness and breathing failure. A medical emergency.</p><p class="gex"><span class="gslabel">Example</span>What to recognize and respond to.</p><div class="plain"><span class="plabel">Plain English</span>Too much — call for help immediately.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a21caf22"/><circle cx="17" cy="17" r="7" fill="none" stroke="#a21caf" stroke-width="2.5"/><path d="M22 22l12 12" stroke="#a21caf" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Tolerance</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Needing more for the same effect as the body adapts — which develops unevenly, leaving breathing suppression dangerous.</p><p class="gex"><span class="gslabel">Example</span>Why 'experienced' doesn't mean safe.</p><div class="plain"><span class="plabel">Plain English</span>The body adapting — unevenly and treacherously.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#3b076422"/><path d="M24 8v32M12 14l24 20M36 14L12 34" fill="none" stroke="#3b0764" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Harm reduction</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Practical strategies to reduce drug-related death and injury — information, not encouragement; honesty, not judgment.</p><p class="gex"><span class="gslabel">Example</span>The entire philosophy of this page.</p><div class="plain"><span class="plabel">Plain English</span>Keeping people alive with facts, not lectures.</div></div></div>
-</div>
+  <span class="eyebrow"><span class="n">07</span>Research interest</span>
+  <h2>Why researchers find it <span class="hl">notable</span></h2>
+  <p class="lede">Dermorphin has <strong>no benefits as a product</strong> — no medical use, no safe dose, no approved therapy, no "upside" for anyone to claim. But as a <strong>research subject</strong>, scientists do find it notable: it is one of the most potent, selective mu-opioid agonists ever characterized, and studying it sharpened opioid pharmacology. Read the tiers below as <strong>strictly unequal</strong>: established lab findings, emerging analogue research, and community discussion of the dangers.</p>
+  <div class="evwrap">
+    <div class="evtimer est reveal">
+      <span class="evbadge est">Tier 1 · Established</span>
+      <h3>What the lab work actually established</h3>
+      <p>Repeatable pharmacology — measured in <strong>receptor assays and animal models</strong>, never in human trials.</p>
+      <ul>
+        <li><strong>Extreme, selective mu-opioid agonism.</strong> Consistently measured at roughly <strong>30–40× morphine's potency</strong> in standard animal pain assays — a benchmark other opioids were calibrated against.</li>
+        <li><strong>Breakdown resistance via D-alanine.</strong> The mirror-image building block at position 2 makes the peptide <strong>resist enzymatic digestion</strong> — a structural trick that became a textbook example in peptide pharmacology.</li>
+        <li><strong>Opioid-receptor confirmation.</strong> Animal antinociception was <strong>blocked by naloxone</strong> — confirming the effects run through opioid receptors, not some novel pathway.</li>
+      </ul>
+      <div class="layman"><span class="ldot" aria-hidden="true"></span><span class="llabel">Think of it this way:</span>this tier is the <strong>lab notebook</strong> — clean, repeatable measurements of what the molecule <em>is</em>. A voltmeter reading on a live wire: precise, useful to engineers, and absolutely not an invitation to touch it.</div>
+      <p style="font-size:.85rem;color:var(--faint)">The honest ceiling: <strong>none of this is a human benefit.</strong> Established here means <em>measured reliably</em>, not <em>helpful to people</em>.</p>
+    </div>
+    <div class="evtimer emg reveal">
+      <span class="evbadge emg">Tier 2 · Predicted / Emerging</span>
+      <h3>Analogue research — the safer-offshoot hope</h3>
+      <p>Real research into <strong>modified versions</strong> of dermorphin (not dermorphin itself) — explicitly <strong>predicted and emerging</strong>, never proven in people.</p>
+      <ul>
+        <li><strong>Research probes.</strong> Ultra-potent, selective mu agonists are <strong>precision instruments</strong> for mapping pain circuitry and receptor biology in the lab.</li>
+        <li><strong>Analogue programs (e.g. DALDA).</strong> Chemists built lab-modified cousins to <strong>separate wanted from unwanted effects</strong> — none became medicines, but the structure–activity lessons fed opioid science broadly.</li>
+        <li><strong>The "different tolerance" hypothesis.</strong> Old literature hinted at a tolerance profile distinct from morphine — <strong>theoretical, not safer</strong>, and never demonstrated in humans.</li>
+      </ul>
+      <div class="layman"><span class="ldot" aria-hidden="true"></span><span class="llabel">Think of it this way:</span>studying a bomb teaches you about <strong>explosives engineering</strong> — blast patterns, casing physics, fuses. That knowledge is real. It still doesn't mean you should keep a bomb.</div>
+    </div>
+    <div class="evtimer com reveal">
+      <span class="evbadge com">Tier 3 · Community</span>
+      <h3>What forums actually discuss</h3>
+      <div class="ulegend"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdotes</strong> — paraphrased recurring themes from forums and social media: not verified, not evidence, <strong>not endorsements</strong>.</p></div>
+      <ul>
+        <li><span class="udot" role="img" aria-label="Unverified anecdote" style="margin-right:.4rem"></span><strong>Warnings, not trip reports.</strong> The recurring theme is <strong>danger talk</strong> — overdoses discussed, the doping scandal retold, potency stories shared as cautionary tales.</li>
+        <li><span class="udot" role="img" aria-label="Unverified anecdote" style="margin-right:.4rem"></span><strong>"Frog juice" mythology.</strong> The racing scandal made it infamous; forum threads recycle the mythos — <strong>fame as a hazard</strong>, not a benefit.</li>
+        <li><span class="udot" role="img" aria-label="Unverified anecdote" style="margin-right:.4rem"></span><strong>No credible use-benefit stories.</strong> Unlike most compounds, this community has <strong>no "it worked for me" lane</strong> — the conversation is about staying away.</li>
+      </ul>
+      <div class="layman"><span class="ldot" aria-hidden="true"></span><span class="llabel">Think of it this way:</span>the forums read like a <strong>wreck report</strong>, not a product review. Stories-not-data — and the stories say: <em>don't</em>.</div>
+    </div>
+  </div>
 </section>
-<mini-poll slug="dermorphin-mini-ch7"
-  data-question="Which term mattered most to learn?"
-  data-answers='[["🔑", "Mu-opioid receptor"],["🪞", "D-alanine"],["🫁", "Respiratory depression"],["🆘", "Harm reduction"]]'>
+<mini-poll slug="dermorphin-mini-benefits"
+  data-question="What stood out most about dermorphin's research story?"
+  data-answers='[["🧪", "A research tool, not a medicine"], ["🪞", "The D-alanine trick"], ["🧬", "Analogue research"], ["⚠️", "The honest ceiling"]]'>
 </mini-poll>
 <!-- ============ CHAPTER 8 ============ -->
 <section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Takeaways</span>
+  <span class="eyebrow"><span class="n">08</span>Who it may suit</span>
+  <h2>Who it may suit — <span class="hl">and who it should not</span></h2>
+  <p class="lede">Dermorphin has <strong>no medical indications and no safe use</strong>. This chapter is therefore brutally short: the only legitimate settings are <strong>research and regulation</strong> — and everyone else is in the caution column.</p>
+  <div class="safety-grid">
+    <div class="suit yes reveal">
+      <h3>May be relevant for</h3>
+      <p>Professional settings where the compound legitimately appears — never personal use.</p>
+      <ul>
+        <li><strong>Pharmacology researchers</strong> — scientists studying opioid-receptor biology who handle dermorphin as a <strong>lab reagent</strong> under institutional safety protocols.</li>
+        <li><strong>Toxicologists and emergency clinicians</strong> — who need to <strong>recognize</strong> ultra-potent opioid exposures and understand their racing-doping history.</li>
+        <li><strong>Racing regulators and drug-testing labs</strong> — the professionals who <strong>detect and prosecute</strong> its misuse in sport.</li>
+      </ul>
+    </div>
+    <div class="suit no reveal">
+      <h3>May not suit / extra caution</h3>
+      <p><strong>Everyone else.</strong> There is no personal use case — only levels of danger.</p>
+      <ul>
+        <li><strong>Anyone seeking pain relief</strong> — dermorphin is <strong>not a medicine</strong>; unsupervised use at this potency is lethal, full stop.</li>
+        <li><strong>People with opioid use history</strong> — tolerance <strong>does not protect</strong> against respiratory depression; potency multiplies every risk.</li>
+        <li><strong>Athletes and trainers</strong> — banned in human sport (WADA S0) and racing (Class 1); detection methods are established.</li>
+        <li><strong>The merely curious</strong> — curiosity is the <strong>most common route</strong> to exposure with compounds like this. This page exists to end the curiosity, not feed it.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bridge reveal"><strong>This is general information, not personal medical advice.</strong> Dermorphin is not approved for any human use anywhere — nothing here is a recommendation for or against any substance, because there is simply no legitimate personal-use context. If substance use is a concern for you or someone you know, speak with a licensed clinician or a local helpline.</div>
+</section>
+<mini-poll slug="dermorphin-mini-fit"
+  data-question="Who is this danger-education page really for?"
+  data-answers='[["🧪", "Researchers & clinicians"], ["👪", "Someone worried about a person"], ["🧠", "The curious — to end curiosity"], ["🚫", "Nobody should seek this out"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 9 ============ -->
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Glossary</span>
+  <h2>Understanding <span class="hl">Dermorphin</span> Terminology</h2>
+  <p class="lede">Twelve terms, each with the science and a plain-English translation. Tap any term to expand it.</p>
+<div class="gloss">
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5d0fe22"/><path d="M24 6v30M14 12l20 24M34 12L14 36" fill="none" stroke="#d0fef8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Dermorphin</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Dermorphin is a naturally occurring heptapeptide (Tyr-D-Ala-Phe-Gly-Tyr-Pro-Ser-NH<sub>2</sub>, with a C-terminal amide) first isolated from the skin secretions of <em>Phyllomedusa</em> frogs. It is an exceptionally potent and selective full agonist of the mu-opioid receptor, the receptor through which opioids produce pain relief, euphoria, and respiratory depression. In standard animal assays it is roughly 30&#8211;40 times more potent than morphine, and its unusual D-alanine at position 2 makes it resistant to many of the enzymes that normally break peptides down. Its pain-blocking effects are reversed by naloxone in animal studies, confirming they run through opioid receptors; it has no approved medical use, and research compounds inspired by it, such as DALDA, remain experimental.</p><div class="plain"><span class="plabel">Plain English</span>Dermorphin is a tiny seven-piece protein chain that a frog's skin makes as a chemical defense. It plugs into the brain's opioid receptor the same way morphine does, but far more powerfully &#8212; about 30 to 40 times stronger in lab tests. One of its seven pieces is a mirror-image building block that the body's cleanup enzymes can't easily chew up, so the molecule hangs around longer than a normal peptide would. There is no approved medicine based on it, and scientists only study it to understand how opioid receptors work; knowing about it doesn't make it safe to touch.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a21caf22"/><circle cx="24" cy="24" r="14" fill="none" stroke="#af1c35" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#af1c35"/></svg><span class="term">Mu-opioid receptor</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The mu-opioid receptor is a Gi/o-coupled G-protein-coupled receptor found on nerve cells, especially in the brain and spinal cord, that normally responds to the body's own opioid peptides such as endorphins. When activated, it dampens pain signaling by reducing neuronal excitability and inhibiting the release of excitatory neurotransmitters. It is the primary target through which morphine, fentanyl, dermorphin, and related drugs produce pain relief &#8212; and also euphoria, slowed breathing, and physical dependence. Dermorphin binds it with high affinity and activates it fully, which is why its effects are intense and its overdose risk is severe.</p><div class="plain"><span class="plabel">Plain English</span>Think of the mu-opioid receptor as a docking port on nerve cells that the body's own pain-relief chemicals plug into. When an opioid plugs in, the nerve cell quiets down, which is why pain fades &#8212; but other body systems quiet down too. This same port is what morphine and dermorphin both target, so they produce the same family of effects: pain relief, euphoria, slower breathing, and dependence. Dermorphin turns this port on at full strength, which explains both its power and its danger.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#3b076422"/><path d="M12 36l8-18 6 10 4-6 6 14z" fill="none" stroke="#640717" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Agonist</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>An agonist is a molecule that binds to a receptor and switches it on, producing a biological response. A <em>full</em> agonist produces the maximum response the receptor is capable of, while a <em>partial</em> agonist produces a weaker, capped response even at high concentrations. Dermorphin is a full agonist at the mu-opioid receptor, so at sufficient levels it drives the receptor as far as it can go. The opposite term, <em>antagonist</em>, describes a molecule that occupies a receptor without activating it and blocks agonists from acting &#8212; naloxone is an antagonist at opioid receptors.</p><div class="plain"><span class="plabel">Plain English</span>An agonist is any molecule that clicks into a receptor and flips its switch on. A full agonist flips the switch all the way; a partial one can only flip it partway, no matter how much is present. Dermorphin is a full agonist, so its effects don't have a built-in ceiling the way a partial agonist's would. An antagonist does the reverse &#8212; it sits in the receptor and blocks it, which is what the reversal drug naloxone does at opioid receptors.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5d0fe22"/><path d="M10 24h8l3-8 4 16 3-8h10" fill="none" stroke="#d0fef8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">D-alanine</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>D-alanine is the D-enantiomer of the amino acid alanine &#8212; the mirror image of the ordinary L-alanine that makes up nearly all animal proteins. At position 2 of dermorphin, this D-form appears where an L-amino acid would normally be, a feature installed by a specialized enzyme in the frog's skin during the peptide's production. D-amino acids are rare in nature, and many of the body's protein-digesting enzymes are shaped to grip only the L-form, so they struggle to cut the peptide next to a D-residue. That resistance to enzymatic breakdown is a major reason dermorphin survives in the body long enough to produce strong effects.</p><div class="plain"><span class="plabel">Plain English</span>Alanine is one of the building blocks of proteins, and it comes in two mirror-image shapes; the everyday one is called L, and the rare flipped one is called D. Dermorphin has the flipped version sitting in the second slot of its seven-piece chain, put there by a special enzyme in the frog's skin. The body's cleanup enzymes are built to handle the everyday L shape, so they can't get a good grip on the D version and leave the peptide alone. That lets dermorphin stick around longer instead of being chopped up right away, which is part of why it's so strong.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a21caf22"/><path d="M14 8h20v10l-5 5v13a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V23l-5-5z" fill="none" stroke="#af1c35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Potency</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Potency describes how much of a substance is required to produce a given effect: a more potent substance reaches that effect at a lower amount. Dermorphin's potency is commonly reported as roughly 30&#8211;40 times that of morphine in standard pain-blocking assays, meaning far less material produces the same measured effect. Potency says nothing about whether a substance is useful, safe, or beneficial &#8212; it is simply a measure of strength per unit. In practice, extreme potency shrinks the margin for error: a tiny difference in amount can mean the difference between a strong effect and a lethal one.</p><div class="plain"><span class="plabel">Plain English</span>Potency is about how little of something you need &#8212; a more potent substance does the job with a smaller amount. Lab tests put dermorphin at about 30 to 40 times the potency of morphine, so a speck-sized amount can hit as hard as a much larger amount of a weaker opioid. Being stronger doesn't mean being better or safer; it just means strength per speck is higher. And high potency means mistakes are unforgiving: a difference too small to see can be the difference between an effect and an overdose.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#3b076422"/><path d="M24 8c7 0 12 5 12 12 0 9-12 20-12 20S12 29 12 20c0-7 5-12 12-12z" fill="none" stroke="#640717" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Respiratory depression</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Respiratory depression is the slowing or stopping of breathing caused by suppression of the brainstem circuits that control the breathing rhythm. All opioid agonists acting at mu-opioid receptors can produce it, because the same receptor activation that dulls pain also quiets the neurons that drive inhalation. It is the mechanism behind nearly all deaths from opioid overdose: as breathing slows and stops, oxygen levels fall until the body shuts down. Tolerance to pain relief can develop while tolerance to respiratory depression lags behind, which is why even familiar opioids remain deadly.</p><div class="plain"><span class="plabel">Plain English</span>Respiratory depression means the brain's breathing control slows down or stops, so breaths get shallow, slow, and then stop entirely. Opioids can do this because the same receptor action that blocks pain also tells the brain's breathing centers to calm down. It is how nearly all opioid overdoses kill &#8212; not the pain relief, but the breath stopping. And the body gets used to the painkilling part faster than the breathing-slowing part, which is one reason experienced users still die from overdose.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5d0fe22"/><path d="M8 16h32M8 24h32M8 32h20" fill="none" stroke="#d0fef8" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Class 1 prohibited</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>&#8220;Class 1 prohibited&#8221; is horse racing's most serious prohibited-substance category, reserved for substances with no legitimate use in racing and the greatest potential to affect performance. Dermorphin is placed in this category because it is a potent opioid with no accepted place in racing, and regulators treat its presence as a major integrity violation. Violations of the Class 1 category carry the harshest penalties available to racing authorities, reflecting how seriously the offense is taken. The category's existence is a measure of how firmly racing authorities consider the substance off-limits.</p><div class="plain"><span class="plabel">Plain English</span>Horse racing sorts banned substances into classes, and Class 1 is the most serious one &#8212; the list nobody is allowed to be on. Dermorphin sits in that class because it's a powerful opioid with no legitimate role anywhere near a racetrack. Getting caught with a Class 1 substance brings the heaviest punishments racing has. The message from the racing world is simple: this is absolutely not allowed.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a21caf22"/><path d="M18 10h12v28H18zM18 18h12M18 26h12" fill="none" stroke="#af1c35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">WADA S0</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>WADA S0 is the category in the World Anti-Doping Agency's prohibited list covering non-approved substances &#8212; drugs not approved for human therapeutic use by any government health authority. Anything in this category is prohibited by default, so it does not need to be named individually to be banned; not being an approved medicine is enough. Dermorphin falls under S0 because no regulator has approved it for human medical use, which makes it prohibited in WADA-governed sport. The category closes the loophole that new or obscure substances could otherwise slip through.</p><div class="plain"><span class="plabel">Plain English</span>WADA, the body that polices doping in sports, has a category called S0 for any substance that isn't an approved medicine anywhere. If a drug has no approval from any country's health authority, S0 bans it automatically &#8212; it doesn't need to be listed by name. Dermorphin has never been approved as a medicine, so it falls into this category and is banned in WADA-governed sport. The rule exists so that obscure or brand-new substances can't slip through the cracks.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#3b076422"/><path d="M24 6l14 8v16l-14 8-14-8V14z" fill="none" stroke="#640717" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="22" r="3.5" fill="#640717"/></svg><span class="term">Kambo</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Kambo is the practice of applying the skin secretions of <em>Phyllomedusa</em> frogs to small burns on the skin, originating in some Amazonian traditions and later adopted in ritual settings elsewhere. Those secretions are a complex mixture of many compounds, and dermorphin is one component among them, alongside numerous other biologically active substances. The practice has been associated with reported fatalities and serious adverse reactions, and no version of it has a basis in modern medicine. Because dermorphin comes from these secretions, kambo is sometimes wrongly imagined as a natural source of an opioid effect &#8212; a dangerous misunderstanding.</p><div class="plain"><span class="plabel">Plain English</span>Kambo is a ritual where frog-skin secretions are placed on small burns in the skin; it comes from some Amazonian traditions and has spread to ritual groups elsewhere. The secretion is a cocktail of many active chemicals, and dermorphin is just one ingredient in the mix. People have died from kambo, and it has no medical use &#8212; it isn't therapy. Calling it natural doesn't make it safe, and it definitely isn't a medicine.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5d0fe22"/><path d="M10 30c3-9 8-14 14-14s11 5 14 14M24 16v18" fill="none" stroke="#d0fef8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Overdose</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>An overdose occurs when a drug's effects exceed what the body can tolerate, pushing vital functions past the point they can recover from. With opioids, overdose typically presents as unresponsiveness, slow or stopped breathing, and dangerously low blood oxygen &#8212; and it is a medical emergency in which minutes matter. Naloxone is the standard emergency reversal agent for opioid overdose, and it works because it blocks the opioid receptors that the overdose is driving. Extreme-potency opioids like dermorphin make overdose more likely, because the line between effect and overdose can be vanishingly small.</p><div class="plain"><span class="plabel">Plain English</span>An overdose is when a drug's effects overwhelm the body past the point it can cope &#8212; not just &#8220;too much,&#8221; but more than the body can survive on its own. An opioid overdose looks like someone who can't be woken up and whose breathing is slow, faint, or stopped &#8212; and it's an emergency where every minute counts. There is a reversal drug called naloxone that emergency responders use for opioid overdose, and it works by blocking the same receptors the opioid is acting on. With something as potent as dermorphin, the gap between an effect and an overdose can be almost nothing.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#a21caf22"/><circle cx="17" cy="17" r="7" fill="none" stroke="#af1c35" stroke-width="2.5"/><path d="M22 22l12 12" stroke="#af1c35" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Tolerance</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Tolerance is the reduction of a drug's effect with repeated exposure, as the body adapts and more is required to produce the same response. With opioids, tolerance develops to different effects at different speeds: tolerance to pain relief and euphoria grows quickly, while tolerance to respiratory depression grows more slowly or barely at all. This uneven adaptation is a major cause of fatal overdose, because a dose that no longer produces the desired effect can still suppress breathing to a lethal degree. Tolerance fades after a period of abstinence, so a previously tolerated amount can become lethal after time away &#8212; a well-documented danger in opioid use.</p><div class="plain"><span class="plabel">Plain English</span>Tolerance means the body gets used to a drug, so the same amount does less and less over time. With opioids, the body adapts unevenly: the pain-relieving and euphoric effects fade fast, but the breathing-slowing effect barely budges. That's a deadly mismatch &#8212; a dose that barely registers can still stop someone's breathing. And tolerance wears off after time away, so an old &#8220;normal&#8221; amount can kill someone who comes back to it after a break.</div></div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#3b076422"/><path d="M24 8v32M12 14l24 20M36 14L12 34" fill="none" stroke="#640717" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Harm reduction</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Harm reduction is a public-health approach that seeks to reduce the deaths and injuries caused by drug use through honest information, safety measures, and non-judgmental support. It does not require abstinence, does not encourage use, and does not moralize: its goal is keeping people alive and healthier, regardless of their choices. Strategies include clear information about risks, overdose recognition and response, and access to emergency help without fear of judgment. This page follows that approach: it presents the facts about dermorphin as accurately as possible, without judgment and without encouragement.</p><div class="plain"><span class="plabel">Plain English</span>Harm reduction means trying to keep people alive and safer through honest information instead of lectures or threats. It doesn't demand that anyone quit, and it doesn't cheer anyone on &#8212; it just gives facts and practical ways to reduce risk. That includes knowing the real dangers, recognizing when something is going wrong, and getting emergency help fast. That's how this page is built: accurate facts about dermorphin, without the lecture and without the pitch.</div></div></div></div>
+</div>
+</section>
+<mini-poll slug="dermorphin-mini-ch9"
+  data-question="Which term mattered most to learn?"
+  data-answers='[["🔑", "Mu-opioid receptor"],["🪞", "D-alanine"],["🫁", "Respiratory depression"],["🆘", "Harm reduction"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 10 ============ -->
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Eight chapters, distilled. If you remember nothing else, remember the first three.</p>
+  <p class="lede">Ten chapters, distilled. If you remember nothing else, remember the first three.</p>
 <div class="take-grid">
 <div class="take reveal"><div class="tk">🐸</div><h4>Frog-skin opioid</h4><p>Dermorphin is a <strong>7-amino-acid mu-opioid agonist</strong> from Phyllomedusa frog skin — nature's chemical weapon.</p></div>
 <div class="take reveal"><div class="tk">💪</div><h4>~40× morphine</h4><p>Extreme potency means <strong>speck-sized margins</strong> between nothing and lethal.</p></div>
@@ -688,10 +858,13 @@ mini-poll { display: block; }
 <div class="take reveal"><div class="tk">🆘</div><h4>Overdose = emergency</h4><p>Slow breathing, unresponsive, blue lips → <strong>call emergency services immediately</strong>.</p></div>
 <div class="take reveal"><div class="tk">🚫</div><h4>No safe amount exists</h4><p>Not small amounts, not experienced users, not careful measuring — <strong>the margin doesn't exist</strong>.</p></div>
 <div class="take reveal"><div class="tk">💬</div><h4>Talk, don't hide</h4><p>Secrecy kills. <strong>Stigma is a risk factor</strong> — honesty keeps people alive.</p></div>
+<div class="take reveal"><div class="tk">🔬</div><h4>Research tool, not medicine</h4><p>Scientists value it as a <strong>mu-opioid probe</strong> — that interest belongs in labs, never in people.</p></div>
+<div class="take reveal"><div class="tk">🧭</div><h4>Who it's for: nobody personal</h4><p>Researchers, toxicologists, regulators. <strong>There is no personal use case.</strong></p></div>
 </div>
 <div class="limits reveal"><h3>What this page does not do</h3><ul><li><strong>Zero instructions.</strong> This page deliberately contains no information about obtaining, preparing, or using dermorphin.</li><li><strong>No sourcing information.</strong> This page does not help find, evaluate, or buy anything from any channel.</li><li><strong>Get help, not high.</strong> If you or someone you know is struggling with opioids, contact local emergency services or a substance-use helpline.</li></ul></div>
 </section>
-<mini-poll slug="dermorphin-mini-ch8"
+<h3 class="rate-h">⭐ How would you rate this infographic?</h3>
+<mini-poll slug="dermorphin-mini-ch10"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "Loved it — five stars"],["🙂", "Good stuff — four stars"],["😐", "It&#39;s okay — three stars"]]'>
 </mini-poll>
@@ -715,6 +888,11 @@ mini-poll { display: block; }
 (function(){
 "use strict";
 var reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+/* ---------- reduced motion: freeze SMIL too (CSS can't) ---------- */
+if(reduced){
+  function freezeSMIL(){document.querySelectorAll("svg").forEach(function(s){try{if(s.pauseAnimations)s.pauseAnimations()}catch(e){}});}
+  freezeSMIL();window.addEventListener("load",freezeSMIL);setTimeout(freezeSMIL,600);
+}
 /* ---------- theme ---------- */
 function setTheme(t){
   document.documentElement.setAttribute("data-theme",t);
@@ -735,7 +913,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#f5d0fe","#a21caf","#f5d0fe","#3b0764","#a21caf","#f5d0fe"];
+  var colors=["#d0fef8","#af1c35","#d0fef8","#640717","#af1c35","#d0fef8"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -842,7 +1020,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -885,7 +1063,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#f5d0fe","#a21caf","#3b0764","#fbbf24","#edf0f9"],parts=[];
+  var cols=["#d0fef8","#af1c35","#640717","#fbbf24","#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -921,7 +1099,7 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#f5d0fe", "#a21caf", "#3b0764", "#bd60c7", "#691271", "#fbbf24", "#f48bea", "#22d3ee"] };
+  accents: ["#d0fef8", "#af1c35", "#640717", "#c76072", "#711222", "#fbbf24", "#f48b9d", "#22d3ee"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies. See component docs for usage. */
@@ -992,8 +1170,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fdba74', '#a3e635', '#fb923c', '#bfaffd', '#f48bea',
-                 '#a3e635', '#fbbf24', '#fb7185', '#22d3ee'];
+                ['#fbd676', '#a3e635', '#fac53d', '#fdafbc', '#f48b9d',
+                 '#a3e635', '#fbbf24', '#717efb', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
